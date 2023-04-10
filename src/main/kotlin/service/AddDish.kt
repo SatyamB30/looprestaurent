@@ -4,7 +4,6 @@ import models.Dish
 import repository.DishRepository
 
 object AddDish {
-    private var dishes = mutableListOf<Dish>()
     fun saveDishs() {
         val no_inputs = readln().toInt()
         var i = 0
