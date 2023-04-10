@@ -1,11 +1,23 @@
 package models
 
-class Dish(val name: String, val category: Categories, val sub_categorues: SubCategories, val price: Int) {
+class Dish(val name: String, val category: Categories, val subCategories: SubCategories, val price: Int) {
     fun getDishName(): String {
         return name
     }
 
+    fun getDishCategory(): Categories {
+        return category
+    }
+
+    fun getDishSubCategory(): SubCategories {
+        return subCategories
+    }
+
+    fun getDishPrice(): Int {
+        return price
+    }
+
     fun printDish() {
-        println("${name}, ${category}, ${sub_categorues}, $price")
+        println("${name}, ${category}, ${subCategories}, $price")
     }
 }
